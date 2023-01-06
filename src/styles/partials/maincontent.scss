@@ -1,0 +1,21 @@
+@use './leftmainbar.scss';
+@use './content.scss';
+// @use '../mixins/grid';
+@use '../mixins/sizing';
+
+.main-content{
+    // @include sizing.size(calc(100vh - 30px),100%);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+
+@media only screen and (max-width: 1250px){
+    .main-content{
+        grid-template-columns: 1fr;
+    }
+    .left-main-bar{
+        position: absolute;
+        visibility: hidden;
+    }
+}

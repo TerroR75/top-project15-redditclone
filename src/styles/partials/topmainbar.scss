@@ -1,0 +1,8 @@
+@use '../mixins/sizing';
+
+
+.top-main-bar{
+    @include sizing.size(50px, 100vw);
+    background-color: red;
+    position: fixed;
+}

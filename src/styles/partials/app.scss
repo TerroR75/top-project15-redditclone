@@ -1,0 +1,9 @@
+@use './topmainbar.scss';
+@use './maincontent.scss';
+@use '../mixins/sizing';
+
+.App{
+    // @include sizing.size(100vh,100vw);
+
+    background-color: rgb(172, 172, 238);
+}
