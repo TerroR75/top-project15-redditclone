@@ -1,9 +1,11 @@
 @use '../mixins/sizing';
+@use '../variables/colors';
 .left-main-bar{
-    background-color: rgb(255, 255, 161);
+    background-color: colors.$dark-primary;
     max-width: 300px;
     min-width: 200px;
     padding: 15px;
+    // visibility: hidden;
 }
 
 .left-navbar{

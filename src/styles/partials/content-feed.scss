@@ -1,3 +1,5 @@
+@use '../variables/colors';
+
 .content-feed{
     display: flex;
     flex-direction: column;
@@ -5,9 +7,19 @@
 }
 
 .post{
-max-width: 900px;
-min-width: 600px;
-height: 300px;
-border: 1px solid black;
-margin: 45px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+    max-width: 640px;
+    min-width: 640px;
+    min-height: 240px;
+    max-height: 675px;
+    background-color: colors.$dark-primary;
+    border: 1px solid colors.$dark-accent-secondary;
+    border-radius: 5px;
+    margin: 15px 0 0 0;
+
+    .post-karma-vote{
+        height: 100%;
+        background-color: colors.$dark-post-votes-section;
+    }
 }

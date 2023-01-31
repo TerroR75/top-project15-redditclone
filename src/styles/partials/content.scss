@@ -1,7 +1,9 @@
 @use './content-feed.scss';
 @use './content-rightside.scss';
+@use '../variables/colors.scss';
 
 .content{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    background-color: colors.$dark-secondary;
 }

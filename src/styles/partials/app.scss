@@ -1,9 +1,10 @@
 @use './topmainbar.scss';
 @use './maincontent.scss';
 @use '../mixins/sizing';
+@use '../variables/colors';
 
 .App{
     // @include sizing.size(100vh,100vw);
-
-    background-color: rgb(172, 172, 238);
+    color: colors.$dark-text-primary;
+    background-color: colors.$dark-secondary;
 }

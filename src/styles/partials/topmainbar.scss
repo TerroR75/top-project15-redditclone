@@ -1,8 +1,9 @@
 @use '../mixins/sizing';
-
+@use '../variables/colors';
 
 .top-main-bar{
     @include sizing.size(50px, 100vw);
-    background-color: red;
+    background-color: colors.$dark-primary;
     position: fixed;
+    border-bottom: 1px solid colors.$dark-accent-secondary;
 }
